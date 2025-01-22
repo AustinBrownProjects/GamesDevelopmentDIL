@@ -11,7 +11,6 @@ function setup() {
 
 	PillarOne = new Sprite(325,height-125,75,250,'s');
 		PillarOne.colour = 'lime'
-
 	PillarTwo = new Sprite(325,height-125,75,250,'s');
 		PillarTwo.colour = 'lime'
 
