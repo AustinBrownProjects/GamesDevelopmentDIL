@@ -1,6 +1,4 @@
-let dvd;
 
-let ySpeed = 10;
 
 function setup() {
 	new Canvas(500, 500);
