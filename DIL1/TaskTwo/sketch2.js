@@ -5,6 +5,7 @@ function setup() {
 
 	dvd = new Sprite(150,100,20,'d')
 		dvd.bounciness = 1;
+
 		dvd.vel.y = 3;
 		dvd.vel.x = 3;
 
