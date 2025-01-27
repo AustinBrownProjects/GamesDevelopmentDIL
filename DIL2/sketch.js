@@ -6,7 +6,13 @@ function setup() {
 	new Canvas(window.innerWidth, window.innerWidth);
 
 
-			player = new Sprite(500,500,40,40,'d');
+			AtlantaJeansFinalBoss = new Sprite(500,500,20,40,'d');
+				// player.img = "AtlantaJeans.png"
+
+
+			// BaggyJeans = new Sprite(500,500,20,40,'d');
+			// BaggyJeans.img = "BaggyJeans.png"
+			// BaggyJeans.moveTowards(AtlantaJeansFinalBoss,0.55)
 
 			// wallsGroup = new Group(leftWall,rightWall,topWall,bottomWall);
 			leftWall = new Sprite( width-width-1, height/2, 1, height,'s');
@@ -46,8 +52,8 @@ function draw() {
 
 				}
 				if(player.vel.y < 0 ){
-					player.vel.y = player.vel.y + 0.1;
-				}}
+					player.vel.y = player.vel.y + 0.1;}
+				}
 			function manMovement() {
 				if (kb.pressing('w')) {
 					player.vel.y = -3
@@ -65,6 +71,16 @@ function draw() {
 					player.vel.x = 3
 				}
 			}
+			// function corruption(){
+			// 	if (BaggyJeans.collides(AtlantaJeansFinalBoss)){
+			// 			AtlantaJeansFinalBoss.img = "BaggyJeans.png"
+			// 			CorruptionScreen = new Sprite(width/2,100,width,100)
+			// 			CorruptionScreen.text = "YOU HAVE BEEN CORRUPTED"
+
+			// 			CorruptionScreenTwo = new Sprite(width/2,100,width,100)
+			// 			CorruptionScreenTwo.text = "YOUR JEANS ARE BAGGY!"
+			// 	}
+			// }
 
 
 
