@@ -19,12 +19,6 @@ function setup() {
 				blockFloor = new Sprite(width/2,block.y+11,width,1,'s')
 					blockFloor.friction = 0;
 				blockFloor.visible = false;
-
-
-
-
-
-
 }
 
 function draw() {
