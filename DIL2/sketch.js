@@ -7,7 +7,7 @@ function preload(){
 
 	AtlantaJeans.resize(20,40);
 
-	baggiestJeans = loadImage("baggyJeans.png");
+	baggiestJeans = loadImage("baggyJeans.jpeg");
 	baggiestJeans.resize(20,40)
 
 }
@@ -73,16 +73,16 @@ function manMovement() {
 }
 function corruption(){
 	if (BaggyJeans.collides(AtlantaJeansFinalBoss)){
-		AtlantaJeansFinalBoss.image = "BaggyJeans.png"
-		CorruptionScreen = new Sprite(width/2,100,width,100)
+		AtlantaJeansFinalBoss.image = "baggyJeans.jpeg"
+		CorruptionScreen = new Sprite(width/2,50,width,100,'s')
 		CorruptionScreen.colour = "blue";
 		CorruptionScreen.text = "YOU HAVE BEEN CORRUPTED"
 
-		CorruptionScreenTwo = new Sprite(width/2,100,width,100)
+		CorruptionScreenTwo = new Sprite(width/2,150,width,100,'s')
 		CorruptionScreenTwo.colour = "blue"
 		CorruptionScreenTwo.text = "YOUR JEANS ARE BAGGY!"
 
-		BaggyJeans.remove();
+
 	}
 }
 function hunting(){
